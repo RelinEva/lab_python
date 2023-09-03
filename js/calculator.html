@@ -1,0 +1,59 @@
+<!-- Create a simple calculator having functionalities of addition,subtraction,multiplication and division. 
+1.calculator should have 2 input field for first no. and second no. 
+2. dropdown to choose option (+,-,*,/) 
+3. when click a result button output should be displayed in an another text field based on selected option-->
+
+
+<!DOCTYPE html> 
+<html>
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculate Two Numbers</title>
+
+<script>
+    function calc()
+    {
+        var n1=parseFloat(document.getElementById('n1').value);
+        var n2=parseFloat(document.getElementById('n2').value);
+        var oper=document.getElementById('operators').value;
+        if(oper==='+')
+        {
+            document.getElementById('result').value=n1 + n2;
+        }  
+        if(oper==='-')
+        {
+            document.getElementById('result').value=n1 - n2;
+        } 
+        if(oper==='/')
+        {
+            document.getElementById('result').value=n1 / n2;
+        } 
+        if(oper==='*')
+        {
+            document.getElementById('result').value=n1 * n2;
+        }   
+    }   
+</script>
+</head>
+   <body>
+    <input type="text" id="n1"><br>
+    <input type="text" id="n2"><br>
+    <select id="operators">
+        <option value="+"> + </option>
+        <option value="-"> - </option>
+        <option value="/"> / </option>
+        <option value="*"> * </option>
+    </select>
+        <botton onclick="calc()">Result</botton>
+        <input type="text" id="result">
+    </body>
+ </html>
+
+        
+        
+        
+        
+        
+        
+        

@@ -1,0 +1,36 @@
+<!--Create a signup for having name,email,phone and password fields
+1. All the fields are required
+2. Name should be minimum 3 character in length and should not contain any numbers
+3. Email should be in valid format
+4. Phone should be minimum 10 numbers in length
+5. Password should be minimum 6 character in length
+Note: don't use html validations-->
+
+<!DOCTYPE html> 
+<html>
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Calculate Two Numbers</title>
+      <script src="sampleregistration.js"></script>
+      </head>
+      <body>
+<h1>Registration Form</h1>
+<form action="registration" onsubmit="returnform_validation();">
+
+<label for="name">Name</label>
+<input type="text" id="name"><br><br>
+
+<label for="email">Email</label>
+<input type="email" id="email"><br><br>
+
+<label for="phone">Phone</label>
+<input type="text" id="phone"><br><br>
+
+<label for=" pswd">Password</label>
+<input type="password" id="pswd"><br><br>
+<input type="submit" name="submit" value="submit">
+
+</form>
+      </body>
+      </html>
